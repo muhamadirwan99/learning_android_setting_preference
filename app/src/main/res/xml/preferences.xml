@@ -1,8 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
+<!-- File XML yang mendefinisikan tampilan dan struktur halaman pengaturan -->
+<!-- PreferenceScreen adalah root container untuk semua preferensi -->
 <PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:iconSpaceReserved="false">
 
+    <!-- EditTextPreference untuk input nama pengguna -->
+    <!-- Menggunakan input text biasa dengan fitur select all saat diklik -->
     <EditTextPreference
         android:iconSpaceReserved="false"
         android:key="@string/key_name"
@@ -11,6 +15,8 @@
         android:summary="@string/nothing"
         android:title="@string/name" />
 
+    <!-- EditTextPreference untuk input email -->
+    <!-- inputType="textEmailAddress" memunculkan keyboard khusus email dengan @ -->
     <EditTextPreference
         android:iconSpaceReserved="false"
         android:inputType="textEmailAddress"
@@ -20,6 +26,8 @@
         android:summary="@string/nothing"
         android:title="@string/email" />
 
+    <!-- EditTextPreference untuk input umur -->
+    <!-- inputType="number" memunculkan keyboard numerik, cocok untuk input angka -->
     <EditTextPreference
         android:iconSpaceReserved="false"
         android:inputType="number"
@@ -29,6 +37,8 @@
         android:summary="@string/nothing"
         android:title="@string/age" />
 
+    <!-- EditTextPreference untuk input nomor telepon -->
+    <!-- Menggunakan input text biasa untuk nomor telepon -->
     <EditTextPreference
         android:iconSpaceReserved="false"
         android:key="@string/key_phone"
@@ -37,6 +47,8 @@
         android:summary="@string/nothing"
         android:title="@string/phone_number" />
 
+    <!-- CheckBoxPreference untuk pilihan boolean (ya/tidak) -->
+    <!-- Cocok untuk setting on/off seperti "Love MU" -->
     <CheckBoxPreference
         android:defaultValue="false"
         android:iconSpaceReserved="false"

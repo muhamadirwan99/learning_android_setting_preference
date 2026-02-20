@@ -1,4 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
+<!-- Layout utama untuk MainActivity -->
+<!-- LinearLayout digunakan sebagai container untuk fragment pengaturan -->
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/setting_holder"
@@ -6,5 +8,6 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     tools:context=".MainActivity">
+    <!-- Container ini akan diisi oleh MyPreferenceFragment secara dinamis dari kode Kotlin -->
 
 </LinearLayout>
